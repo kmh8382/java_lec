@@ -10,7 +10,7 @@ public class ReferenceEx {
     System.out.println(s);
     System.out.println(System.identityHashCode(s));
     
-    // ReferenceEx 클래스 타입 (6장애서 다룰 예정)
+    // ReferenceEx 클래스 타입 (6장에서 다룰 예정)
     ReferenceEx x = new ReferenceEx();
     System.out.println(x);
   }

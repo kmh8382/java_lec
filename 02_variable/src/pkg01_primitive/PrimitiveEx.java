@@ -27,7 +27,7 @@ public class PrimitiveEx {
     float e = 1.111111111F; // float 타입의 값은 마지막에 F(f) 를 추가
     System.out.println(e);
 
-    // 6. double : 4바이트 실수 - 기본 실수 타입 
+    // 6. double : 8바이트 실수 - 기본 실수 타입 
     double f = 1.111111111111; 
     System.out.println(f);
 
