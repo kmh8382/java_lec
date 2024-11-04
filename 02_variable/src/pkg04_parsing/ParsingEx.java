@@ -15,7 +15,7 @@ public class ParsingEx {
     System.out.println(c);
     
     // 변환이 불가능할 경우 NunberFomatException
-    
+    Integer.parseInt("");
   }
 
 }
