@@ -29,7 +29,7 @@ public class ArithmeticEx {
     
     int y = 10;
     System.out.println(y--);  // 10 (y 출력 후 감소)
-    System.out.println(--y);  // 8  (y 감소 후 출력
+    System.out.println(--y);  // 8  (y 감소 후 출력)
     
   }
 

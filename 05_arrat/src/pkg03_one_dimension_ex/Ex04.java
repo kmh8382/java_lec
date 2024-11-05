@@ -53,30 +53,39 @@ public class Ex04 {
 //    binary = temp;
 //    System.out.println(Arrays.toString(binary));
     
-    int index = 0;
+//    int index = 0;
+//    
+//    while(number > 0) {
+//      if(number % 2 == 1) {
+//        binary[index] = 1;
+//      }
+//      else {
+//        binary[index] = 0;
+//      }
+//      number /= 2;      
+//      index++;
+//    }    
+//    System.out.println(Arrays.toString(binary));
+//    // System.out.println(index);
+//   
+//    int[] temp = new int[index];
+//    
+//    for(int i = index-1, j = 0; i >= 0; i--) {
+//      // System.out.println(i);
+//      // System.out.println("  " + j);
+//      temp[j++] = binary[i];
+//    }
+//    System.out.println(Arrays.toString(temp));
     
+    int i = 0;
     while(number > 0) {
-      if(number % 2 == 1) {
-        binary[index] = 1;
-      }
-      else {
-        binary[index] = 0;
-      }
-      number /= 2;      
-      index++;
-    }    
-    System.out.println(Arrays.toString(binary));
-    // System.out.println(index);
-   
-    int[] temp = new int[index];
-    
-    for(int i = index-1, j = 0; i >= 0; i--) {
-      // System.out.println(i);
-      // System.out.println("  " + j);
-      temp[j++] = binary[i];
+      binary[i++] = number % 2;
+      number /= 2;
     }
-    System.out.println(Arrays.toString(temp));
     
+    for(int j = i-1; j >= 0; j--) {
+      System.out.print(binary[j]);
+    }
   }
 
 }

@@ -10,11 +10,14 @@ public class Ex03 {
     int[] ary = {10, 20, 30, 0, 0, 0};
     int[] numbers = {40, 50, 60};
     
-    for(int i = 3; i < ary.length; i++) {
-      ary[i] = numbers[i-3];
-    }
-    System.out.println(Arrays.toString(ary));
+//    for(int i = 3; i < ary.length; i++) {
+//      ary[i] = numbers[i-3];
+//    }
+//    System.out.println(Arrays.toString(ary));
 
+    // 배열 복사
+    System.arraycopy(numbers, 0, ary, 3, numbers.length);
+    System.out.println(Arrays.toString(ary));
   }
 
 }
