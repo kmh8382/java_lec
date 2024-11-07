@@ -13,7 +13,7 @@ public class ReturnEx {
     s.methodA(10);
     s.methodA(-5);
     
-    // methodB 호출 (1 전달: 아메리카노 반환, 2 전달: 카페라떼 반환, 3 전달: 아이슈패너, )
+    // methodB 호출 (1 전달: 아메리카노 반환, 2 전달: 카페라떼 반환, 3 전달: 아이슈패너,나머지 경우 : 없는 메뉴 반환 )
     System.out.println(s.methodB(1));
     System.out.println(s.methodB(2));
     System.out.println(s.methodB(3));

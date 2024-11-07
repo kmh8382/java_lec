@@ -5,7 +5,7 @@ package pkg08_static;
  * 1. 메모리의 클래스 영역에 저장된다.
  * 2. 인스턴스의 생성이 없어도 접근할 수 있다.
  * 3. 멤버 앞에 static 키워드를 추가한다.
- * 4. 클래스로 로출한다. (단, 인스턴스로 호출할수도 있으나 권장하지 않는다.)
+ * 4. 클래스로 호출한다. (단, 인스턴스로 호출할수도 있으나 권장하지 않는다.)
  * 5. 클래스 메소드는 오직 클래스 멤버만 호출해서 사용할 수 있다.
  *    (클래스 메소드는 인스턴스 멤버를 호출할 수 없다.)
  */
@@ -25,14 +25,14 @@ public class Sample {
   static String item;   // 클래스 멤버 (static 이 붙어서)
   String item2;         // 인스턴스 멤버 
   
-  //인스턴스 멤버
+  // 인스턴스 멤버
   public void methodA() {
     System.out.println("인스턴스 메소드 methodA");
     System.out.println(item);
     System.out.println(item2);
   }
   
-  //인스턴스 멤버
+  // 클래스 멤버
   public static void methodB() {
     System.out.println("클래스 메소드 methodB");
     System.out.println(item);

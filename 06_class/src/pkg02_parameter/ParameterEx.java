@@ -4,7 +4,7 @@ public class ParameterEx {
 
   public static void main(String[] args) {
     
-    // 클리스 Sample 타입의 인스턴스 s 생ㅅㅇ하기
+    // 클래스 Sample 타입의 인스턴스 s 생성하기
     Sample s = new Sample();
     
     // methodA 호출 (인스턴스를 이용해서 호출) 
