@@ -6,7 +6,7 @@ package pkg09_abstract;
  * 2. 클래스 앞에 abstract 키워드를 추가해야 한다.
  * 3. 특징
  *   1) 추상 클래스를 상속 받는 클래스들은 "반드시" 모든 추상 메소드를 오버라이드 해야 한다.
- *   2) 추상 클래스는 인스천스 생성할 수 없다. (new Animal() 불가)
+ *   2) 추상 클래스는 인스턴스 생성할 수 없다. (new Animal() 불가)
  */
 public abstract class Animal {
 
