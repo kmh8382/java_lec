@@ -54,7 +54,7 @@ public class FileEx {
     // 디렉터리가 있으면 삭제하기
     if(dir.exists()) {
       dir.delete();           // JVM이 실행 중이어도 삭제한다.
-      // dir.deleteOnExit();  // JVM이 종료되면 삭제한다.
+//      dir.deleteOnExit();  // JVM이 종료되면 삭제한다.
       
       // 확인
       System.out.println(dir.exists() ? "삭제실패" : "삭제성공");    
@@ -69,7 +69,7 @@ public class FileEx {
     
     // 하위 디렉터리/파일을 모두 File 인스턴스로 가져오기 
     File[] files = javaHome.listFiles();    
-    // System.out.println(files.length);
+//    System.out.println(files.length);   
     
     // for 문
     for(File file : files) {
@@ -79,8 +79,9 @@ public class FileEx {
       builder.append(String.format("%-20s", file.getName().substring(0, Math.min(file.getName().length(), 20))));
       
       // 수정한 날짜
-      long lastModified = file.lastModified();
-      builder.append(String.format("%-30s", new SimpleDateFormat("yyyy-MM-dd a h:mm").format(lastModified)));
+//      long lastModified = file.lastModified();
+//      builder.append(String.format("%-30s", new SimpleDateFormat("yyyy-MM-dd a h:mm").format(lastModified)));
+      builder.append(String.format("%-30s", new SimpleDateFormat("yyyy-MM-dd a h:mm").format(file.lastModified())));
       
       // 유형
       builder.append(String.format("%-10s", file.isFile() ? "파일" : "파일폴더"));
@@ -141,9 +142,9 @@ public class FileEx {
   
 //    a();
 //    b();
-//    c();
+    c();
 //    d();
-    e("d:\\2024\\11\\15");
+//    e("d:\\2024\\11\\15");
 
   }
 
